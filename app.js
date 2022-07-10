@@ -10,6 +10,14 @@ const  https = require("https");
 var StringDecoder = require('string_decoder').StringDecoder;
 let config = require('./config')
 const fs = require("fs")
+const _data = require("./lib/data");
+
+
+_data.create('test', 'newFile', {'foo':'bar'},(err) =>{
+  console.log(err);
+})
+
+// console.log('_data',_data);
 
 // 
 const undefined = (req, res) => {
