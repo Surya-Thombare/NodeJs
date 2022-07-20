@@ -11,7 +11,10 @@ var StringDecoder = require('string_decoder').StringDecoder;
 let config = require('./config')
 const fs = require("fs")
 const _data = require("./lib/data");
-
+// const { default: helpers } = require('./lib/helpers');
+// const { default: handlers } = require('./lib/handlers').default;
+const handlers = require('./lib/handlers');
+const helpers = require('./lib/helpers')
 
 _data.create('test', 'newFile', {'foo':'bar'},(err) =>{
   console.log(err);
@@ -55,7 +58,7 @@ const undefined = (req, res) => {
          'queryStringObject' : queryStringObject,
          'method' : method,
          'headers' : headers,
-         'payload' : buffer
+         'payload' : helpers.parseJsonToObject(buffer)
        };
  
        // Route the request to the handler specified in the router
@@ -106,19 +109,9 @@ httpsServer.listen(config.httpsPort,() => {
 });
 
 // Define all the handlers
-var handlers = {};
-
-// Ping handlers
-handlers.ping = () =>{
-  callback(200)
-}
-
-// Not found handler
-handlers.notFound = function(data,callback){
-  callback(404);
-};
 
 // Define the request router
 var router = {
-  'ping' : handlers.ping
+  'ping' : handlers.ping,
+  'users' : handlers.users
 };

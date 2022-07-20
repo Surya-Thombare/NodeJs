@@ -3,13 +3,15 @@ let environments = {}
 environments.satgging = {
     'httpPort': 3000,
     'httpsPort': 3001,
-    'envName': 'satgging'
+    'envName': 'satgging',
+    'hashingSecret': 'thisIsahashingSecret'
 };
 
 environments.production = {
     'httpPort': 5000,
     'httpsPort': 5001,
-    'envName': 'production'
+    'envName': 'production',
+    'hashingSecret': 'thisIsahashingSecret'
 };
 
 
