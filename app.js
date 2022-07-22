@@ -23,7 +23,7 @@ _data.create('test', 'newFile', {'foo':'bar'},(err) =>{
 // console.log('_data',_data);
 
 // 
-const undefined = (req, res) => {
+const server = (req, res) => {
    // Parse the url
    var parsedUrl = url.parse(req.url, true);
 
@@ -53,6 +53,7 @@ const undefined = (req, res) => {
        var chosenHandler = typeof(router[trimmedPath]) !== 'undefined' ? router[trimmedPath] : handlers.notFound;
  
        // Construct the data object to send to the handler
+       console.log(queryStringObject);
        var data = {
          'trimmedPath' : trimmedPath,
          'queryStringObject' : queryStringObject,
@@ -86,7 +87,7 @@ const undefined = (req, res) => {
 
  // Configure the server to respond to all requests with a string
  var httpServer = http.createServer(function(req,res){
-  undefined(req, res)
+  server(req, res)
  
 });
 
