@@ -5,7 +5,12 @@ environments.satgging = {
     'httpsPort': 3001,
     'envName': 'satgging',
     'hashingSecret': 'thisIsahashingSecret',
-    'maxChecks' : 5
+    'maxChecks' : 5,
+    'twilio' : {
+    'accountSid' : 'AC3cc181e6aba70d8895fcda32886c12ef',
+    'authToken' : '4ec028c8d6ae60d50cb22682b5fdf03f',
+    'fromPhone' : '+15087197274'
+    }
 };
 
 environments.production = {
@@ -13,9 +18,13 @@ environments.production = {
     'httpsPort': 5001,
     'envName': 'production',
     'hashingSecret': 'thisIsahashingSecret',
-    'maxChecks' : 5
+    'maxChecks' : 5,
+    'twilio' : {
+        'accountSid' : '',
+        'authToken' : '',
+        'fromPhone' : ''
+    }
 };
-
 
 
 console.log(process.env.NODE_ENV);

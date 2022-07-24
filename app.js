@@ -16,6 +16,10 @@ const _data = require("./lib/data");
 const handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers')
 
+helpers.sendTwilioSms ('8591061262', 'Hello!', function(err) {
+console.log('this was the error', err);
+})
+
 _data.create('test', 'newFile', {'foo':'bar'},(err) =>{
   console.log(err);
 })
@@ -117,4 +121,4 @@ var router = {
   'users' : handlers.users,
   'tokens' : handlers.tokens,
   'checks' : handlers.checks
-};
+}
