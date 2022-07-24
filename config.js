@@ -4,14 +4,16 @@ environments.satgging = {
     'httpPort': 3000,
     'httpsPort': 3001,
     'envName': 'satgging',
-    'hashingSecret': 'thisIsahashingSecret'
+    'hashingSecret': 'thisIsahashingSecret',
+    'maxChecks' : 5
 };
 
 environments.production = {
     'httpPort': 5000,
     'httpsPort': 5001,
     'envName': 'production',
-    'hashingSecret': 'thisIsahashingSecret'
+    'hashingSecret': 'thisIsahashingSecret',
+    'maxChecks' : 5
 };
 
 
