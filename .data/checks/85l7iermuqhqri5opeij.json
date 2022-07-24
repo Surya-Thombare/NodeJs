@@ -1,12 +1,12 @@
 {
     "id": "85l7iermuqhqri5opeij",
     "userPhone": "1234567890",
-    "protocol": "http",
+    "protocol": "https",
     "url": "google.com",
     "successCodes": [
         200,
-        201
+        403
     ],
-    "timeoutSeconds": 3,
-    "method": "get"
+    "timeoutSeconds": 2,
+    "method": "put"
 }
