@@ -1,1 +1,12 @@
-{"id":"vneh726sdpq3jgekfkua","userPhone":"1234567890","protocol":"http","url":"google.com","successCodes":[200,201],"timeoutSeconds":3,"method":"get"}
+{
+    "id": "vneh726sdpq3jgekfkua",
+    "userPhone": "1234567890",
+    "protocol": "http",
+    "url": "google.com",
+    "successCodes": [
+        200,
+        201
+    ],
+    "timeoutSeconds": 3,
+    "method": "get"
+}

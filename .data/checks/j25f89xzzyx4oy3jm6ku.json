@@ -1,1 +1,12 @@
-{"id":"j25f89xzzyx4oy3jm6ku","userPhone":"8779530857","protocol":"http","url":"google.com","successCodes":[200,201],"timeoutSeconds":3,"method":"get"}
+{
+    "id": "j25f89xzzyx4oy3jm6ku",
+    "userPhone": "8779530857",
+    "protocol": "http",
+    "url": "google.com",
+    "successCodes": [
+        200,
+        201
+    ],
+    "timeoutSeconds": 3,
+    "method": "get"
+}

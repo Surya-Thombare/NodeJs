@@ -1,1 +1,12 @@
-{"id":"gsgoupeb0n4mwgg7sl7g","userPhone":"8779530857","protocol":"http","url":"google.com","successCodes":[200,201],"timeoutSeconds":3,"method":"get"}
+{
+    "id": "gsgoupeb0n4mwgg7sl7g",
+    "userPhone": "8779530857",
+    "protocol": "http",
+    "url": "google.com",
+    "successCodes": [
+        200,
+        201
+    ],
+    "timeoutSeconds": 3,
+    "method": "get"
+}
