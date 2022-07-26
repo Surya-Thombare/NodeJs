@@ -1,6 +1,6 @@
 const server = require('./lib/server')
 
-// const workers =  require('./lib/workers')
+const workers =  require('./lib/workers')
 
 const app = {
 
@@ -11,7 +11,7 @@ app.init = () => {
 
   server.init();
 
-  // workers.init()
+  workers.init()
 
 }
 
